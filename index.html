@@ -4,8 +4,19 @@
 <link rel="shortcut icon" href="favicon.ico"></link>
 <link rel="stylesheet" href="btn.css">
 <style>
-body{background-image: url("bg.jpg");background-repeat: no-repeat;background-size:70%;background-position: center;background-color: black;
-color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
+body{
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-color: black;
+  color:white;
+  font-size:20px;
+  text-align:center;
+  margin:0;
+  overflow:hidden;
+  height: 100vh;
+}
 .info{overflow: hidden;position: fixed;position: absolute;top: 45%;left: 50%;font-size: 25px;font-family: sans-serif;color: white;transform: translate(-50%, -50%);}
 </style>
 
@@ -1402,6 +1413,29 @@ import('./alert.mjs');
 </head>
 
 <body onload="checkbinserverstatus()">
+    <style>
+      * {
+        font-size: 20px !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+      }
+      button {
+        font-size: 0.8em !important;
+      }
+      div {
+        margin-top: 0.5em !important;
+      }
+      div#cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        margin: 0 !important;
+        backdrop-filter: saturate(120%) blur(20px);
+        z-index: -9999;
+      }
+    </style>
+    <div id="cover"></div>
     <h1 id=msgs style='font-size:25px;text-align:center;color:white'>Kameleon 900FW Exploit Host (Manual Method) PSFree</h1>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Back to Main Menu'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Manual Method) PSFree'" onclick="load_mainmenu(); return false">Back to Main Menu</button>
     <button class="btnkme" onMouseOver="msgs.innerHTML='To Original'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Manual Method) PSFree'" onclick="load_originalSite(); return false">Original Site</button>
