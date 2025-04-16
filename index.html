@@ -476,6 +476,14 @@ else
     
 }
 
+function load_originalSite(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Going to Original Site!!!</h1>";
+var link = document.createElement('a');
+document.body.appendChild(link);
+link.href = 'https://kmeps4.site/';
+link.click();  
+}
+
 
 function load_mainmenu(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Going to Main Menu!!!</h1>";
@@ -1396,6 +1404,7 @@ import('./alert.mjs');
 <body onload="checkbinserverstatus()">
     <h1 id=msgs style='font-size:25px;text-align:center;color:white'>Kameleon 900FW Exploit Host (Manual Method) PSFree</h1>
     <button class="btnkme" onMouseOver="msgs.innerHTML='Back to Main Menu'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Manual Method) PSFree'" onclick="load_mainmenu(); return false">Back to Main Menu</button>
+    <button class="btnkme" onMouseOver="msgs.innerHTML='To Original'"; onmouseout="msgs.innerHTML='Kameleon 900FW Exploit Host (Manual Method) PSFree'" onclick="load_originalSite(); return false">Original Site</button>
     <div id=mymenu style="text-align:center;">
       <div text-align= center>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
       <div style="width:100%;font-size:20px;color:white">
